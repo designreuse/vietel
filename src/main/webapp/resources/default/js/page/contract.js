@@ -43,7 +43,7 @@ $(function() {
 function displayTable() {
 	var dataDepartments = [];
 	$.ajax({
-		url : "/thietbi/contract/getAll",
+		url : "/vietel/contract/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -85,7 +85,7 @@ function displayTable() {
 
 function editItem(id) {
 	$.ajax({
-		url : "/thietbi/contract/get",
+		url : "/vietel/contract/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -103,7 +103,7 @@ function editItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/thietbi/contract/delete",
+			url : "/vietel/contract/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -122,7 +122,7 @@ function editedItem() {
 		var contractName = $("#updateItemForm .contractName").val();
 		var contractDescription = $("#updateItemForm .contractDescription").val();
 		$.ajax({
-			url : "/thietbi/contract/update",
+			url : "/vietel/contract/update",
 			type : "POST",
 			data : {
 				contractId : contractId,
@@ -147,7 +147,7 @@ function insertItem() {
 		var contractName = $("#contractName").val();
 		var contractDescription = $("#contractDescription").val();
 		$.ajax({
-			url : "/thietbi/contract/new",
+			url : "/vietel/contract/new",
 			type : "POST",
 			data : {
 				contractName : contractName,

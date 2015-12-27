@@ -38,26 +38,6 @@
 				class="nav-label">Người dùng</span> <span class="fa arrow"></span></a>
 				<ul class="nav nav-second-level collapse">
 					<li><a href="<c:url value='/admin/user/list'/>">Quản lý người dùng</a></li>
-					<%-- <li><a href="<c:url value='/admin/department/list'/>">Phòng ban</a></li> --%>
-					<li><a href="<c:url value='/admin/role/list'/>">Quản lý quyền</a></li>
-				<%-- <li><a href="<c:url value='/admin/customer/list'/>">Quản lý khách hàng</a></li> --%>
-				</ul>
-			</li>
-			<li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
-				class="nav-label">Quản lý thiết bị</span> <span class="fa arrow"></span></a>
-				<ul class="nav nav-second-level collapse">
-					<li><a href="<c:url value='/admin/device/list'/>">Thiết bị</a></li>
-					<li><a href="<c:url value='/admin/deviceType/list'/>">Loại thiết bị</a></li>
-					<li><a href="<c:url value='/admin/contract/list'/>">Hợp đồng</a></li>
-					<li><a href="<c:url value='/admin/contractDetail/list'/>">Chi tiết hợp đồng</a></li>
-					<li><a href="<c:url value='/admin/department/list'/>">Phòng ban</a></li>
-				</ul>
-			</li>
-			<li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
-				class="nav-label">Quá trình sử dụng</span> <span class="fa arrow"></span></a>
-				<ul class="nav nav-second-level collapse">
-					<li><a href="<c:url value='/admin/usedItem/list'/>">Sử dụng</a></li>
-					<li><a href="<c:url value='/admin/repairItem/list'/>">Sửa chữa</a></li>
 				</ul>
 			</li>
 		</ul>

@@ -8,7 +8,7 @@ $(function() {
 			userName:{
 				required:true,
 				remote : {
-					url : '/thietbi/user/checkUsername',
+					url : '/vietel/user/checkUsername',
 					type : 'post',
 					data :{
 						username : function(){
@@ -31,7 +31,7 @@ $(function() {
 			},email : {
 				required : true,
 				remote : {
-					url : '/thietbi/user/checkEmail',
+					url : '/vietel/user/checkEmail',
 					type : 'post',
 					data :{
 						email : function(){
@@ -148,7 +148,7 @@ function insertItem() {
 		var state = $("#stateBox").val();
 		var phone = $("#phone").val();
 		$.ajax({
-			url : "/thietbi/user/new",
+			url : "/vietel/user/new",
 			type : "POST",
 			data : {
 				userName : userName,
@@ -185,7 +185,7 @@ function insertItem() {
 function displayTable() {
 	var dataUsers = [];
 	$.ajax({
-		url : "/thietbi/user/getAll",
+		url : "/vietel/user/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -252,7 +252,7 @@ function displayTable() {
 
 function editItem(id) {
 	$.ajax({
-		url : "/thietbi/user/get",
+		url : "/vietel/user/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -277,7 +277,7 @@ function editItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/thietbi/user/delete",
+			url : "/vietel/user/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -303,7 +303,7 @@ function editedItem() {
 		var state = $("#updateItemForm .stateBox").val();
 		var phone = $("#updateItemForm .phone").val();
 		$.ajax({
-			url : "/thietbi/user/update",
+			url : "/vietel/user/update",
 			type : "POST",
 			data : {
 				userId : userId,
@@ -344,7 +344,7 @@ function changePassProcess(){
 	var userId = $("#changeModalForm .userId").val();
 	var password = $("#changeModalForm .password").val();
 	$.ajax({
-		url : "/thietbi/user/changePassword",
+		url : "/vietel/user/changePassword",
 		type : "POST",
 		data : {
 			userId : userId,

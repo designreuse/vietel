@@ -43,7 +43,7 @@ $(function() {
 function displayTable() {
 	var dataDepartments = [];
 	$.ajax({
-		url : "/thietbi/deviceType/getAll",
+		url : "/vietel/deviceType/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -85,7 +85,7 @@ function displayTable() {
 
 function editItem(id) {
 	$.ajax({
-		url : "/thietbi/deviceType/get",
+		url : "/vietel/deviceType/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -103,7 +103,7 @@ function editItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/thietbi/deviceType/delete",
+			url : "/vietel/deviceType/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -122,7 +122,7 @@ function editedItem() {
 		var deviceTypeName = $("#updateItemForm .deviceTypeName").val();
 		var deviceTypeDescription = $("#updateItemForm .deviceTypeDescription").val();
 		$.ajax({
-			url : "/thietbi/deviceType/update",
+			url : "/vietel/deviceType/update",
 			type : "POST",
 			data : {
 				deviceTypeId : deviceTypeId,
@@ -147,7 +147,7 @@ function insertItem() {
 		var deviceTypeName = $("#deviceTypeName").val();
 		var deviceTypeDescription = $("#deviceTypeDescription").val();
 		$.ajax({
-			url : "/thietbi/deviceType/new",
+			url : "/vietel/deviceType/new",
 			type : "POST",
 			data : {
 				deviceTypeName : deviceTypeName,

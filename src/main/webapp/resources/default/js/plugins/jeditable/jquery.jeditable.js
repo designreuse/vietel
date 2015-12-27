@@ -6,8 +6,8 @@
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
  *
- * thietbi home:
- *   http://www.appelsiini.net/thietbis/jeditable
+ * vietel home:
+ *   http://www.appelsiini.net/vietels/jeditable
  *
  * Based on editable by Dylan Verheul <dylan_at_dyve.net>:
  *    http://www.dyve.net/jquery/?editable

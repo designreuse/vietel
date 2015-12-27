@@ -43,7 +43,7 @@ $(function() {
 function displayTable() {
 	var dataDepartments = [];
 	$.ajax({
-		url : "/thietbi/department/getAll",
+		url : "/vietel/department/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -85,7 +85,7 @@ function displayTable() {
 
 function editItem(id) {
 	$.ajax({
-		url : "/thietbi/department/get",
+		url : "/vietel/department/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -103,7 +103,7 @@ function editItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/thietbi/department/delete",
+			url : "/vietel/department/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -122,7 +122,7 @@ function editedItem() {
 		var departmentName = $("#updateItemForm .departmentName").val();
 		var departmentDescription = $("#updateItemForm .departmentDescription").val();
 		$.ajax({
-			url : "/thietbi/department/update",
+			url : "/vietel/department/update",
 			type : "POST",
 			data : {
 				departmentId : departmentId,
@@ -147,7 +147,7 @@ function insertItem() {
 		var departmentName = $("#departmentName").val();
 		var departmentDescription = $("#departmentDescription").val();
 		$.ajax({
-			url : "/thietbi/department/new",
+			url : "/vietel/department/new",
 			type : "POST",
 			data : {
 				departmentName : departmentName,

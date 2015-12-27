@@ -41,7 +41,8 @@ public class HomeController extends GenericController {
 	 */
 	@RequestMapping(value = { "/admin/home", "/admin" }, method = RequestMethod.GET)
 	public String adminHome(Locale locale, Model model) {
-		model.addAttribute("pageName", "Quản trị người dùng");
+		model.addAttribute("title", "Quản trị hồ sơ viettel");
+		model.addAttribute("pageName", "Quản trị hồ sơ viettel");
 		return "home";
 	}
 

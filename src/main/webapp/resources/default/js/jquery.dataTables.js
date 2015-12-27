@@ -13292,7 +13292,7 @@
 		//
 		// Depreciated
 		// The following properties are retained for backwards compatiblity only.
-		// The should not be used in new thietbis and will be removed in a future
+		// The should not be used in new vietels and will be removed in a future
 		// version
 		//
 	
